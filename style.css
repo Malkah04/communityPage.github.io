@@ -324,6 +324,17 @@ header .t:hover,
     .five div{
         width: 200px;
     }
+    .section{
+        display: flex;
+    }
+    .section img{
+        width: 80vw;
+        height: auto;
+        margin: 0;
+    }
+    .aside h4 {
+        margin: 0 auto; 
+    }
     
     
 }

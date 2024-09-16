@@ -1,0 +1,331 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body{
+    margin: 0 ;
+    max-width: 1440px;
+    width: 100%;
+}
+.cont{
+    /* overflow-x: hidden; */
+    background-image: url(bg-hero-desktop.svg);
+    width: 100vw;
+    height: 650px;
+    background-color: rgb(212, 245, 245);
+}
+header{
+
+    display: flex;
+}
+header span{
+    flex: 3;
+}
+header .t{
+    flex: 1;
+    background-color: white;
+    position: relative;
+    width: 20px;
+    height: 30px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(219, 219, 219);
+    margin-left: 500px;
+    margin-right: 100px;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+header .t:hover,
+.aside h4:hover,
+.five div:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.c{
+    display: flex;
+    margin: 50px 50px;
+    /* overflow-x: hidden; */
+}
+.aside{
+    padding-top: 30px;
+    flex: 1;
+   
+   
+    
+}
+.aside h1{
+    font-weight:bolder ;
+}
+.section{
+    flex: 1;
+    position: relative;
+    
+
+}
+.section img{
+    width: 60vw;
+    height: 80vh;
+}
+.aside h4{
+    background-color: rgb(224, 165, 175) ;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    margin-left: 20px;
+    color: white;
+}
+.sec,
+.thr,
+.four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:200px ;
+    margin-bottom: 20px;
+    border: solid 1px rgb(236, 235, 235);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.sec span,
+.thr span,
+.four span{
+
+    flex: 1;
+    /* padding:50px 20px; */
+}
+.sec span img,
+.thr span img,
+.four span img{
+    padding: 10px 0px;
+    width: 25vw;
+    height: 50vh;
+    margin-left: 80px;
+    
+
+}
+
+.sec .s h1{
+    font-weight: bolder;
+}
+.sec .s p{
+    opacity: 0.7;
+}
+.thr,
+.four {
+    margin-top: 5px;
+}
+.five{
+    /* margin:200px ;
+    margin-bottom: 0; */
+    border: solid 1px rgb(236, 235, 235);
+    width: 600px;
+    margin:200px auto 0;
+    height: 40vh;
+    padding-top: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    top: 50px;
+    background-color: white;
+
+}
+.five div{
+    background-color: rgb(224, 165, 175);
+    width: 15vw;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding-top: 10px;
+    color: white;
+}
+.last,.l{
+    background-color: #010e22;
+    background-color: #03252e;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    padding: 0 50px;
+    color: white;
+    gap: 0px;
+}
+.last span{
+    flex: 1;
+
+
+}
+.last .a{
+    margin-top: 30px;
+}
+.l img{
+    width: 200px;
+    height: 40px;
+    color: white;
+    
+}
+.l{
+    padding: 100px 50px 30px 50px;
+    height: 40px;
+}
+.last  div{
+    margin-bottom: 20px ;
+}
+.last .b,
+.last .s,
+.last .d{
+    margin-top: 30px;
+}
+.last .d div{
+    padding-bottom: 100px;
+    padding-left: 10px;
+}
+.last .b div:hover,
+.last .s div:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.last .d img{
+    filter: brightness(0) invert(1);
+    width: 20px;
+    height: 20px;
+}
+.last .d img:hover{
+        filter: brightness(0) saturate(1000%) hue-rotate(-50deg) invert(40%);
+        cursor: pointer;
+    
+}
+@media screen and (max-width:768px) {
+    body{
+        width: 100%;
+    }
+
+    .cont{
+        display: flex;
+        flex-direction: column;
+        background-image: url(bg-hero-mobile.svg);
+        height: 1000px;
+        width: 100vw;
+        
+        height: fit-content;
+    }
+    .c{
+        display: flex;
+        flex-direction: column;
+    }
+    .c .section{
+        width: 100vw;
+        height: 50px;
+
+    }
+    .sec,
+    .thr,
+    .four{
+        margin:0 ; 
+        width: 90vw;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 400px;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .thr{
+        flex-direction: column;
+    }
+    .thr,
+.four {
+    margin-top: 200px;
+}
+.sec span img,
+.thr span img,
+.four span img{
+    
+    width: 60vw;
+    height: 30vh;
+}
+    .sec{
+        margin-top: 50px;
+        margin-bottom: -175px;
+    }
+    .thr{
+        margin-bottom: -175px;
+    }
+    .five div{
+        width: 30vw;
+    }
+    .last,.l{
+        width: 120vw;
+        margin: 0;
+    }
+    header .t{
+        position: relative;
+        margin-left: 10px;
+    }
+    .five {
+    margin-left: 60px;
+    
+    }
+    .last {
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        padding-left: 0px;
+    }
+
+    .last .loc{
+        white-space: wrap;
+    }
+
+    .last .im{
+        padding-right: 300px;
+    }
+    .last .phone{
+        padding-right: 330px;
+    }
+    .last .b div,
+    .last .s div{
+        padding-right: 400px;
+    
+    }
+    .last .d .k{
+        margin-top: -90px;
+    }
+    .five{
+        width: 90%; 
+        margin: 0 auto;
+    }
+    .five div{
+        width: 200px;
+    }
+    
+    
+}
+
+
